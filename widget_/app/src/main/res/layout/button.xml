@@ -6,27 +6,62 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:gravity="center"
+        android:text="선택"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/radioGroup01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="남성"
+            android:textColor="#55AAFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="여성"
+            android:textColor="#55AAFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
     </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="하루종일"
+            android:textSize="24sp"
+            android:paddingRight="10dp"
+            android:textColor="#ff55aaff"/>
+
+        <CheckBox
+            android:id="@+id/allDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>
